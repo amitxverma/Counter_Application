@@ -13,31 +13,12 @@
 
 <body>
     <div class="container d-flex flex-column">
-
-        <div class="row user-counter my-5">
-            <div class="col">
-                <div class="card p-3 text-center" id="user1">
-                    <p class="counter-count">000</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card   p-3 text-center" id="user2">
-                    <p class="counter-count">000</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card   p-3 text-center" id="user3">
-                    <p class="counter-count">000</p>
-                </div>
-            </div>
-        </div>
-
         <div class="row admin-control mt-auto mb-4">
             <div class="col-4">
                 <div class="card p-3 align-items-center" data-counter="user1">
                     <div class="toggle-switch align-self-start">
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" data-id="user1">
                             <span class="slider"></span>
                         </label>
                     </div>
@@ -53,7 +34,7 @@
                 <div class="card p-3 align-items-center" data-counter="user2">
                     <div class="toggle-switch align-self-start">
                         <label class="switch">
-                            <input type="checkbox">
+                            <input type="checkbox" data-id="user2">
                             <span class="slider"></span>
                         </label>
                     </div>
@@ -69,7 +50,7 @@
                 <div class="card p-3 align-items-center" data-counter="user3">
                     <div class="toggle-switch align-self-start">
                         <label class="switch">
-                            <input type="checkbox">
+                            <input type="checkbox" data-id="user3">
                             <span class="slider"></span>
                         </label>
                     </div>
@@ -82,8 +63,9 @@
                 </div>
             </div>
         </div>
-
     </div>
+  
+
     <script src="assets/js/script.js"></script>
 </body>
 

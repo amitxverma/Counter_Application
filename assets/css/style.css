@@ -12,9 +12,7 @@ body {
     height: 100vh;
 }
 
-.admin-control {
-
-}
+.admin-control {}
 
 .card {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -30,7 +28,7 @@ body {
 }
 
 .card.isDisabled {
-    background-color: #e5e5e5;   
+    background-color: #e5e5e5;
 }
 
 .card.isDisabled .counter-count {
@@ -43,12 +41,15 @@ body {
 .admin-control .card .prev-cta.disabled,
 .admin-control .card .prev-cta:disabled,
 .admin-control .card .reset-cta.disabled,
-.admin-control .card .reset-cta:disabled {
+.admin-control .card .reset-cta:disabled,
+.admin-control .card .next-cta.disabled,
+.admin-control .card .next-cta:disabled {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
-    cursor: not-allowed; 
-    opacity: .65;   
+    cursor: not-allowed;
+    opacity: .65;
+    pointer-events: none;
 }
 
 .switch {
